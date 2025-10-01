@@ -25,7 +25,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-32 surface-dark">
+    <section id="services" className="py-32">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -40,7 +40,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group surface-darker p-8 rounded-lg border border-border/50 hover:border-primary/50 transition-smooth hover:transform hover:scale-105"
+              className="group bg-card/30 backdrop-blur-sm p-8 rounded-lg border border-border/50 hover:border-primary/50 transition-smooth hover:transform hover:scale-105"
             >
               <div className="text-primary mb-4 transform group-hover:scale-110 transition-smooth">
                 {service.icon}

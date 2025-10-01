@@ -12,18 +12,8 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Cinematic video production"
-          className="w-full h-full object-cover opacity-40"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
-      </div>
-
       {/* Content */}
-      <div className="container mx-auto px-6 z-10 text-center">
+      <div className="container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up opacity-0 [animation-delay:200ms]">
           We create videos
           <br />

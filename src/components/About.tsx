@@ -2,7 +2,7 @@ import { Award, Users, Zap } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-32 surface-dark">
+    <section id="about" className="py-32">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -38,7 +38,7 @@ const About = () => {
 
             {/* Right Content - Creative Visual */}
             <div className="relative">
-              <div className="aspect-square rounded-lg surface-darker border border-primary/20 overflow-hidden">
+              <div className="aspect-square rounded-lg bg-card/30 backdrop-blur-sm border border-primary/20 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-transparent to-background/50" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">

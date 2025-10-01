@@ -19,7 +19,7 @@ const CaseStudy = () => {
           </div>
 
           {/* Video Placeholder */}
-          <div className="aspect-video surface-darker rounded-lg overflow-hidden mb-12 border border-primary/20">
+          <div className="aspect-video bg-card/30 backdrop-blur-sm rounded-lg overflow-hidden mb-12 border border-primary/20">
             <div className="w-full h-full bg-gradient-to-br from-primary/20 to-background/40 flex items-center justify-center">
               <div className="text-center">
                 <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
@@ -51,7 +51,7 @@ const CaseStudy = () => {
             ].map((stat, index) => (
               <div
                 key={index}
-                className="text-center surface-darker p-8 rounded-lg border border-border/50"
+                className="text-center bg-card/30 backdrop-blur-sm p-8 rounded-lg border border-border/50"
               >
                 <div className="text-primary mb-4 flex justify-center">
                   {stat.icon}
