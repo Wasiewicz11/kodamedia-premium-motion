@@ -15,14 +15,14 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up opacity-0 [animation-delay:200ms]">
-          We create videos
+          Tworzymy filmy
           <br />
-          <span className="text-gradient glow-text">that sell</span>
+          <span className="text-gradient glow-text">które sprzedają</span>
         </h1>
         <p className="text-xl md:text-2xl text-foreground/70 mb-12 max-w-3xl mx-auto animate-fade-in-up opacity-0 [animation-delay:400ms]">
-          Premium video marketing for brands that demand excellence.
+          Premium wideo marketing dla marek wymagających doskonałości.
           <br />
-          From concept to conversion.
+          Od koncepcji do konwersji.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up opacity-0 [animation-delay:600ms]">
           <Button
@@ -30,7 +30,7 @@ const Hero = () => {
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold text-lg px-8 py-6 animate-glow"
             onClick={scrollToContact}
           >
-            Start Your Project
+            Rozpocznij Projekt
             <ArrowRight className="ml-2" size={20} />
           </Button>
           <Button
@@ -42,17 +42,17 @@ const Hero = () => {
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            View Our Work
+            Zobacz Nasze Prace
           </Button>
         </div>
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto animate-fade-in opacity-0 [animation-delay:800ms]">
           {[
-            { number: "500+", label: "Projects Delivered" },
-            { number: "50M+", label: "Views Generated" },
-            { number: "200+", label: "Happy Clients" },
-            { number: "15+", label: "Awards Won" },
+            { number: "500+", label: "Zrealizowanych Projektów" },
+            { number: "50M+", label: "Wygenerowanych Wyświetleń" },
+            { number: "200+", label: "Zadowolonych Klientów" },
+            { number: "15+", label: "Zdobytych Nagród" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">

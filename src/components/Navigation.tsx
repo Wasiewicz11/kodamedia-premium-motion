@@ -14,10 +14,17 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = ["Services", "Work", "About", "Contact"];
+  const navItems = ["Usługi", "Projekty", "O nas", "Kontakt"];
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId.toLowerCase());
+    const sectionMap: { [key: string]: string } = {
+      "Usługi": "services",
+      "Projekty": "work",
+      "O nas": "about",
+      "Kontakt": "contact"
+    };
+    const elementId = sectionMap[sectionId] || sectionId.toLowerCase();
+    const element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
@@ -53,7 +60,7 @@ const Navigation = () => {
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
             onClick={() => scrollToSection("contact")}
           >
-            Let's Talk
+            Porozmawiajmy
           </Button>
         </div>
 
@@ -83,7 +90,7 @@ const Navigation = () => {
               className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
               onClick={() => scrollToSection("contact")}
             >
-              Let's Talk
+              Porozmawiajmy
             </Button>
           </div>
         )}

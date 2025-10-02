@@ -16,8 +16,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
+      title: "Wiadomość wysłana!",
+      description: "Odezwiemy się w ciągu 24 godzin.",
     });
     setFormData({ name: "", email: "", message: "" });
   };
@@ -29,12 +29,12 @@ const Contact = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              Let's create something
+              Stwórzmy coś
               <br />
-              <span className="text-gradient glow-text">amazing together</span>
+              <span className="text-gradient glow-text">niesamowitego razem</span>
             </h2>
             <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-              Ready to elevate your brand with video content that converts? Get in touch.
+              Gotowy na podniesienie marki z treściami wideo, które konwertują? Skontaktuj się z nami.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ const Contact = () => {
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+                <h3 className="text-2xl font-bold mb-6">Skontaktuj się</h3>
                 <div className="space-y-4">
                   {[
                     {
@@ -52,13 +52,13 @@ const Contact = () => {
                     },
                     {
                       icon: <Phone />,
-                      label: "Phone",
+                      label: "Telefon",
                       value: "+1 (555) 123-4567",
                     },
                     {
                       icon: <MapPin />,
-                      label: "Location",
-                      value: "Warsaw, Poland",
+                      label: "Lokalizacja",
+                      value: "Warszawa, Polska",
                     },
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-4">
@@ -78,7 +78,7 @@ const Contact = () => {
 
               {/* Social Links */}
               <div>
-                <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+                <h3 className="text-xl font-bold mb-4">Obserwuj Nas</h3>
                 <div className="flex gap-4">
                   {["Instagram", "LinkedIn", "Vimeo", "YouTube"].map((social) => (
                     <a
@@ -98,7 +98,7 @@ const Contact = () => {
               <div>
                 <Input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Twoje Imię"
                   value={formData.name}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
@@ -110,7 +110,7 @@ const Contact = () => {
               <div>
                 <Input
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Twój Email"
                   value={formData.email}
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
@@ -121,7 +121,7 @@ const Contact = () => {
               </div>
               <div>
                 <Textarea
-                  placeholder="Tell us about your project..."
+                  placeholder="Opowiedz nam o swoim projekcie..."
                   value={formData.message}
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
@@ -136,7 +136,7 @@ const Contact = () => {
                 size="lg"
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
               >
-                Send Message
+                Wyślij Wiadomość
                 <Send className="ml-2" size={18} />
               </Button>
             </form>

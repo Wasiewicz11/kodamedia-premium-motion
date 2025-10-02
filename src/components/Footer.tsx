@@ -10,25 +10,25 @@ const Footer = () => {
               KODAMEDIA
             </div>
             <p className="text-foreground/60 text-sm">
-              Premium video marketing that performs
+              Premium wideo marketing, który działa
             </p>
           </div>
 
           <div className="flex gap-8 text-sm text-foreground/60">
             <a href="#" className="hover:text-primary transition-smooth">
-              Privacy Policy
+              Polityka Prywatności
             </a>
             <a href="#" className="hover:text-primary transition-smooth">
-              Terms of Service
+              Regulamin
             </a>
             <a href="#" className="hover:text-primary transition-smooth">
-              Careers
+              Kariera
             </a>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-border/30 text-center text-sm text-foreground/50">
-          © {currentYear} KODAMEDIA. All rights reserved.
+          © {currentYear} KODAMEDIA. Wszelkie prawa zastrzeżone.
         </div>
       </div>
     </footer>

@@ -4,23 +4,23 @@ const Services = () => {
   const services = [
     {
       icon: <Video className="w-8 h-8" />,
-      title: "Commercial Production",
-      description: "High-impact commercials that captivate audiences and drive conversions. From concept to final cut.",
+      title: "Produkcja Reklamowa",
+      description: "Efektowne reklamy, które przyciągają uwagę i zwiększają konwersje. Od koncepcji do finalnego montażu.",
     },
     {
       icon: <Megaphone className="w-8 h-8" />,
-      title: "Social Media Content",
-      description: "Viral-ready content optimized for every platform. Short-form videos that stop the scroll.",
+      title: "Treści Social Media",
+      description: "Wirusowe treści zoptymalizowane pod każdą platformę. Krótkie filmy, które zatrzymują wzrok.",
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Brand Storytelling",
-      description: "Cinematic narratives that connect emotionally and build lasting brand loyalty.",
+      description: "Kinowe narracje, które łączą emocjonalnie i budują trwałą lojalność marki.",
     },
     {
       icon: <Film className="w-8 h-8" />,
-      title: "Full Film Production",
-      description: "End-to-end production services with world-class equipment and award-winning crew.",
+      title: "Pełna Produkcja Filmowa",
+      description: "Kompleksowe usługi produkcyjne ze sprzętem światowej klasy i nagradzaną ekipą.",
     },
   ];
 
@@ -29,10 +29,10 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Our <span className="text-gradient">Services</span>
+            Nasze <span className="text-gradient">Usługi</span>
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-            We offer comprehensive video production services tailored to your brand's unique needs.
+            Oferujemy kompleksowe usługi produkcji wideo dostosowane do unikalnych potrzeb Twojej marki.
           </p>
         </div>
 

@@ -9,12 +9,12 @@ const CaseStudy = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-              Featured Case Study
+              Wyróżnione Studium Przypadku
             </div>
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              How we drove <span className="text-gradient">300% ROI</span>
+              Jak osiągnęliśmy <span className="text-gradient">300% ROI</span>
               <br />
-              for a fashion brand
+              dla marki modowej
             </h2>
           </div>
 
@@ -25,7 +25,7 @@ const CaseStudy = () => {
                 <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
                   <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-primary border-b-8 border-b-transparent ml-1" />
                 </div>
-                <p className="text-foreground/70">Campaign Video Preview</p>
+                <p className="text-foreground/70">Podgląd Filmu Kampanii</p>
               </div>
             </div>
           </div>
@@ -36,17 +36,17 @@ const CaseStudy = () => {
               {
                 icon: <TrendingUp />,
                 metric: "300%",
-                label: "Return on Investment",
+                label: "Zwrot z Inwestycji",
               },
               {
                 icon: <Eye />,
                 metric: "5.2M",
-                label: "Total Video Views",
+                label: "Wyświetleń Wideo",
               },
               {
                 icon: <MousePointer />,
                 metric: "12%",
-                label: "Conversion Rate",
+                label: "Wskaźnik Konwersji",
               },
             ].map((stat, index) => (
               <div
@@ -67,7 +67,7 @@ const CaseStudy = () => {
           {/* Description */}
           <div className="prose prose-invert max-w-none mb-12">
             <p className="text-lg text-foreground/70 leading-relaxed">
-              A luxury fashion brand approached us to launch their new collection. We created a multi-platform video campaign that combined cinematic brand films with snackable social content. The result? Record-breaking engagement and sales that exceeded projections by 3x.
+              Luksusowa marka modowa zwróciła się do nas o wsparcie w premierze nowej kolekcji. Stworzyliśmy multiplatformową kampanię wideo łączącą kinowe filmy brandowe z przyswajalnymi treściami social media. Rezultat? Rekordowe zaangażowanie i sprzedaż przewyższająca prognozy 3-krotnie.
             </p>
           </div>
 
@@ -77,7 +77,7 @@ const CaseStudy = () => {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold text-lg px-8"
             >
-              Read Full Case Study
+              Przeczytaj Pełne Studium
               <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>

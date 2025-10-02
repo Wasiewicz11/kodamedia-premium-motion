@@ -3,33 +3,33 @@ import { Play } from "lucide-react";
 const Portfolio = () => {
   const projects = [
     {
-      title: "Luxury Brand Campaign",
-      category: "Commercial",
+      title: "Kampania Luksusowej Marki",
+      category: "Reklama",
       views: "2.5M",
     },
     {
-      title: "Tech Product Launch",
+      title: "Premiera Produktu Tech",
       category: "Social Media",
       views: "5M",
     },
     {
-      title: "Fashion Editorial",
-      category: "Brand Film",
+      title: "Moda Editorial",
+      category: "Film Brandowy",
       views: "1.8M",
     },
     {
-      title: "Automotive Excellence",
-      category: "Commercial",
+      title: "Doskonałość Motoryzacji",
+      category: "Reklama",
       views: "3.2M",
     },
     {
-      title: "Food & Lifestyle",
+      title: "Jedzenie i Styl Życia",
       category: "Social Media",
       views: "4.5M",
     },
     {
-      title: "Corporate Story",
-      category: "Brand Film",
+      title: "Historia Korporacyjna",
+      category: "Film Brandowy",
       views: "900K",
     },
   ];
@@ -39,10 +39,10 @@ const Portfolio = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Selected <span className="text-gradient">Work</span>
+            Wybrane <span className="text-gradient">Projekty</span>
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-            A showcase of our most impactful projects that drove real results for our clients.
+            Prezentacja naszych najbardziej efektownych projektów, które przyniosły realne wyniki dla naszych klientów.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const Portfolio = () => {
                   {project.category}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <div className="text-sm text-foreground/60">{project.views} views</div>
+                <div className="text-sm text-foreground/60">{project.views} wyświetleń</div>
               </div>
             </div>
           ))}

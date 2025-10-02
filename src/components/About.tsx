@@ -9,22 +9,22 @@ const About = () => {
             {/* Left Content */}
             <div>
               <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                Crafting stories that
+                Tworzymy historie, które
                 <br />
-                <span className="text-gradient glow-text">move markets</span>
+                <span className="text-gradient glow-text">poruszają rynki</span>
               </h2>
               <p className="text-lg text-foreground/70 mb-8 leading-relaxed">
-                We're a collective of filmmakers, storytellers, and strategists obsessed with creating videos that don't just look beautiful—they perform.
+                Jesteśmy kolektywem filmowców, storytellerów i strategów, którzy tworzą filmy nie tylko piękne wizualnie—ale skuteczne.
               </p>
               <p className="text-lg text-foreground/70 mb-8 leading-relaxed">
-                Every frame is intentional. Every cut drives action. We combine cinematic artistry with data-driven strategy to deliver content that converts.
+                Każda klatka jest zamierzona. Każde cięcie napędza akcję. Łączymy kinową artystykę ze strategią opartą na danych, by dostarczać treści, które konwertują.
               </p>
               
               <div className="space-y-4">
                 {[
-                  { icon: <Award />, text: "Award-winning creative team" },
-                  { icon: <Users />, text: "200+ brands trust us" },
-                  { icon: <Zap />, text: "Fast turnaround, premium quality" },
+                  { icon: <Award />, text: "Nagradzany zespół kreatywny" },
+                  { icon: <Users />, text: "Ponad 200 marek nam ufa" },
+                  { icon: <Zap />, text: "Szybka realizacja, premium jakość" },
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
@@ -43,7 +43,7 @@ const About = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <div className="text-8xl font-bold text-gradient mb-4">500+</div>
-                    <div className="text-xl text-foreground/70">Projects That Performed</div>
+                    <div className="text-xl text-foreground/70">Projektów, które działały</div>
                   </div>
                 </div>
               </div>
