@@ -13,10 +13,10 @@ const FloatingCTA = () => {
     <div className="fixed bottom-6 right-6 z-40 animate-fade-in">
       <Button
         onClick={scrollToContact}
-        className="backdrop-blur-2xl bg-primary/90 hover:bg-primary text-primary-foreground shadow-2xl border border-primary/20 rounded-full px-6 py-6 font-semibold transition-smooth hover:scale-105"
+        className="backdrop-blur-2xl bg-background/30 hover:bg-background/40 text-foreground border border-border/20 rounded-2xl px-6 py-4 font-semibold transition-smooth hover:scale-105 shadow-2xl"
       >
         <Calendar className="w-5 h-5 mr-2" />
-        Bezpłatna Konsultacja
+        Umów bezpłatną konsultację
       </Button>
     </div>
   );
