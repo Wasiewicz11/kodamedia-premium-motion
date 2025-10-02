@@ -1,26 +1,21 @@
-import { Video, Megaphone, Sparkles, Film } from "lucide-react";
+import { Video, Globe, TrendingUp } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       icon: <Video className="w-8 h-8" />,
-      title: "Produkcja Reklamowa",
-      description: "Efektowne reklamy, które przyciągają uwagę i zwiększają konwersje. Od koncepcji do finalnego montażu.",
+      title: "Video Marketing",
+      description: "Kompleksowa produkcja wideo – od scenariusza, przez nagranie i montaż, po publikację i analizę wyników. Reklamy, social media, brand storytelling i filmy korporacyjne.",
     },
     {
-      icon: <Megaphone className="w-8 h-8" />,
-      title: "Treści Social Media",
-      description: "Wirusowe treści zoptymalizowane pod każdą platformę. Krótkie filmy, które zatrzymują wzrok.",
+      icon: <Globe className="w-8 h-8" />,
+      title: "Strony WWW",
+      description: "Nowoczesne, szybkie strony internetowe, które konwertują. Pełne strony firmowe i dedykowane landing pages zoptymalizowane pod kątem sprzedaży.",
     },
     {
-      icon: <Sparkles className="w-8 h-8" />,
-      title: "Brand Storytelling",
-      description: "Kinowe narracje, które łączą emocjonalnie i budują trwałą lojalność marki.",
-    },
-    {
-      icon: <Film className="w-8 h-8" />,
-      title: "Pełna Produkcja Filmowa",
-      description: "Kompleksowe usługi produkcyjne ze sprzętem światowej klasy i nagradzaną ekipą.",
+      icon: <TrendingUp className="w-8 h-8" />,
+      title: "Strategia Marketingowa",
+      description: "Kompleksowe podejście do budowania obecności online. Analiza, strategia komunikacji i optymalizacja działań marketingowych.",
     },
   ];
 
@@ -36,7 +31,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <div
               key={index}
